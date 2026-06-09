@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "node dist/main.js",
     "start:dev": "npx ts-node src/main.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "nestjs",
@@ -37,5 +37,11 @@
     "ts-node": "^10.9.2",
     "typeorm": "^0.3.28",
     "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^11.1.26",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11"
   }
 }
